@@ -1,9 +1,13 @@
 {
   "name": "lumos",
   "version": "1.0.0",
-    "scripts": {
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
+  "scripts": {
       "ng": "ng",
-      "start": "NODE_OPTIONS='--openssl-legacy-provider --no-deprecation' ng serve",
+      "start": "node server.js",
       "build": "NODE_OPTIONS='--openssl-legacy-provider --no-deprecation' ng build --prod",
       "vercel-build": "ng build --configuration production",
       "watch": "ng build --watch --configuration development",
@@ -52,6 +56,7 @@
     "nouislider": "^14.6.3",
     "overlayscrollbars": "^1.13.1",
     "overlayscrollbars-ngx": "^0.2.3",
+    "popper.js": "^1.16.1",
     "rxjs": "~6.3.3",
     "seedrandom": "^3.0.1",
     "tslib": "^2.0.0",
